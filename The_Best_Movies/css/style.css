@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display:grid;
+    align-items:center;
+    width: 100%;
+    height: 100px;
+    background: rgb(71, 66, 63);
+    color: white;
+    text-align: center;
+}
+
+.bdf {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lbd {
+    order: 1;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(179, 177, 178);
+}
+
+.rbd {
+    order: 2;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(173, 166, 146);
+}
+
+.search {
+    width: 90%;
+    height: 20px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border-radius: 10px;
+    outline: 1px solid gray;
+    background-color: white;
+}
+
+#search_input {
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    height: 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#search_button {
+    border: none;
+    outline: 1px solid black;
+    height: 20px;
+    width: 60px;
+    border-radius: 10px;
+}
+
+.movie_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+.movie_title {
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    display: grid;
+    align-items: center;
+}
+
+.movie_data {
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.movie_data img {
+    width: 100%;
+    border-radius: 10px;
+}
